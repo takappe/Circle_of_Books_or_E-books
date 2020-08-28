@@ -1,0 +1,60 @@
+.body {
+  padding: 150px;
+  background: radial-gradient( #05fbff, #1d62f0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__main__box1 {
+
+    &__message1 {
+
+      h1 {
+        padding-bottom: 50px;
+        font-size: 50px;
+        font-family: cursive;
+      }
+    }
+
+    &__message2 {
+
+      h2 {
+        font-size: 30px;
+        padding-bottom: 50px;
+        font-family: monospace;
+      }
+    }
+  }
+
+  &__main__box2 {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__login {
+      width: 105px;
+      line-height: 55px;
+      margin: 35px;
+      padding: 10px;
+      font-size: 20px;
+      font-family: cursive;
+      border: 2px solid white;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    &__new {
+      width: 105px;
+      line-height: 55px;
+      margin: 35px;
+      padding: 10px;
+      font-size: 20px;
+      font-family: monospace;
+      border: 2px solid white;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}

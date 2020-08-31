@@ -22,3 +22,81 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# アプリ名
+Circle of Books or E-books
+
+# 概要
+書籍や電子書籍で学んだ事をアウトプットします
+アウトプットした内容を自身の行動に反映する様にコミットします
+コミットした内容に対してどう変化があったのかアウトプットします
+さらにどうしていくかを改めてコミットします
+その内容をたくさんの人と共有します
+
+# 制作背景
+書籍や電子書籍を読んでも知識として蓄えるのではなく、
+アウトプットをし行動を変えていく事が重要と考え、
+アウトプットを気軽に出来る場所が必要だと考えました。
+また、実践する中でそれに対し共感し合える人たちが必要だと考えました。
+
+# DEMO
+<img width="1440" alt="スクリーンショット 2020-08-31 15 29 28" src="https://user-images.githubusercontent.com/68013970/91701803-c4ff6780-ebb2-11ea-9121-f7947b6372d0.png">
+
+# 実装予定の内容
+ブログの投稿
+コメント機能の実装
+画像投稿の実装
+
+# GitHubのURL
+https://github.com/takappe/Circle_of_Books_or_E-books
+
+# DB設計
+
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false, unique: true|
+|email|string|null: false|
+|password|string|null: false|
+
+### Association
+- has_many :blogs
+
+## blogsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string||
+|blog|text||
+|user_id|references|foreign_key: true|
+
+### Association
+- belongs_to :user
+- has_many :images
+- has_many :comments
+
+## commentsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|comment|string||
+|blog_id|references|foreign_key: true|
+|user_id|references|foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :blog
+
+## imagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|image|string||
+|blog_id|references|foreign_key: true|
+
+### Association
+- belongs_to :blog
+
+#作者
+takappe

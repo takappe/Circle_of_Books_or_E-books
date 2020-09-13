@@ -21,4 +21,6 @@ body {
   }
 }
 
-@import "blogs_index"
+@import "modules/blogs_index";
+@import "modules/blogs_new";
+@import "modules/flash";

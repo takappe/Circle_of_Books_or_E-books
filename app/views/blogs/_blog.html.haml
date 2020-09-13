@@ -1,10 +1,14 @@
 .blog__content__box
+  .blog__userName
+    投稿者：
+    = blog.user.nickname
   .blog__date
+    投稿日時：
     = blog.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .blog__title
+    title：
     = blog.title
-  .blog__nickname
-    /= blog.user.name
   .blog__text
+    blog本文：
     - if blog.blog.present?
       = blog.blog

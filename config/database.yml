@@ -48,7 +48,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+#半角スペース２個分の空白を開ける
   <<: *default
-  database: Circle_of_Books_or_E_books_production
-  username: Circle_of_Books_or_E_books
-  password: <%= ENV['CIRCLE_OF_BOOKS_OR_E_BOOKS_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

@@ -1,7 +1,7 @@
 .contents.row
   .container
     = form_with(model: @blog, local: true) do |form|
-      %h3 投稿する
-      = form.text_field :title, placeholder: "読んでいる本のTitle"
-      = form.text_area :blog, placeholder: "アウトプットしよう", rows: "10"
-      = form.submit "SEND"
+      %h3 読んで得た事をアウトプットしよう！
+      = form.text_field :title, placeholder: "読んでいる本のTitle", class: "input__title"
+      = form.text_area :blog, placeholder: "アウトプットしよう", rows: "10", class: "input__blog"
+      = form.submit "SEND", class: "send__button"

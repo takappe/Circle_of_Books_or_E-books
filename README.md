@@ -42,10 +42,19 @@ Circle of Books or E-books
 # DEMO
 <img width="1440" alt="スクリーンショット 2020-08-31 15 29 28" src="https://user-images.githubusercontent.com/68013970/91701803-c4ff6780-ebb2-11ea-9121-f7947b6372d0.png">
 
+<img width="1436" alt="スクリーンショット 2020-09-15 16 36 32" src="https://user-images.githubusercontent.com/68013970/93180589-573a6a80-f772-11ea-8fc2-7075620a6ef0.png">
+
+<img width="1440" alt="スクリーンショット 2020-09-15 16 36 53" src="https://user-images.githubusercontent.com/68013970/93180670-789b5680-f772-11ea-9290-85539b0bf9ae.png">
+
+<img width="1440" alt="スクリーンショット 2020-09-15 16 37 09" src="https://user-images.githubusercontent.com/68013970/93180688-7fc26480-f772-11ea-8a5f-e888eb724874.png">
+
+
 # 実装予定の内容
-ブログの投稿
 コメント機能の実装
 画像投稿の実装
+
+# herokuのURL
+https://hidden-waters-06372.herokuapp.com/
 
 # GitHubのURL
 https://github.com/takappe/Circle_of_Books_or_E-books

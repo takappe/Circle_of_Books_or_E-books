@@ -33,6 +33,12 @@ Circle of Books or E-books
 さらにどうしていくかを改めてコミットします
 その内容をたくさんの人と共有します
 
+# 本番環境
+https://hidden-waters-06372.herokuapp.com/
+テストユーザー
+email:test@test.co.jp
+password:asdfgh
+
 # 制作背景
 書籍や電子書籍を読んでも知識として蓄えるのではなく、
 アウトプットをし行動を変えていく事が重要と考え、
@@ -40,21 +46,27 @@ Circle of Books or E-books
 また、実践する中でそれに対し共感し合える人たちが必要だと考えました。
 
 # DEMO
-<img width="1440" alt="スクリーンショット 2020-08-31 15 29 28" src="https://user-images.githubusercontent.com/68013970/91701803-c4ff6780-ebb2-11ea-9121-f7947b6372d0.png">
 
+TOP画面になります。
+「ゲストユーザー（閲覧用）」をクリックして頂ければ、新規登録をせずにblogを投稿する事ができます。
+<img width="1440" alt="スクリーンショット 2020-09-17 21 59 24" src="https://user-images.githubusercontent.com/68013970/93473555-1b99cf00-f931-11ea-8d67-d0d79a69180f.png">
+
+ログインをすると、投稿一覧ページに遷移します。
+画面右上の「投稿する」をクリックしますと、投稿画面に遷移します。
 <img width="1436" alt="スクリーンショット 2020-09-15 16 36 32" src="https://user-images.githubusercontent.com/68013970/93180589-573a6a80-f772-11ea-8fc2-7075620a6ef0.png">
 
+titleに読んだ本のタイトル、textareaには読んで学んだ事をアウトプットします。
+入力をしたら、画面中央下にある「SEND」をクリックしますと投稿ができます。
 <img width="1440" alt="スクリーンショット 2020-09-15 16 36 53" src="https://user-images.githubusercontent.com/68013970/93180670-789b5680-f772-11ea-9290-85539b0bf9ae.png">
 
+投稿をすると投稿一覧ページに戻ります。
 <img width="1440" alt="スクリーンショット 2020-09-15 16 37 09" src="https://user-images.githubusercontent.com/68013970/93180688-7fc26480-f772-11ea-8a5f-e888eb724874.png">
 
 
 # 実装予定の内容
+マイページの実装
 コメント機能の実装
 画像投稿の実装
-
-# herokuのURL
-https://hidden-waters-06372.herokuapp.com/
 
 # GitHubのURL
 https://github.com/takappe/Circle_of_Books_or_E-books

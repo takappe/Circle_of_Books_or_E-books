@@ -12,3 +12,5 @@
     blog本文：
     - if blog.blog.present?
       = blog.blog
+  - if user_signed_in? && current_user.id == blog.user_id 
+    = link_to '削除', blog_path(blog.id), method: :delete

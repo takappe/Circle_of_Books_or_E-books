@@ -1,0 +1,7 @@
+.contents.row
+  .container
+    = form_with(model: @blog, local: true) do |form|
+      %h3 編集ページ
+      = form.text_field :title, placeholder: "読んでいる本のTitle", class: "input__title"
+      = form.text_area :blog, placeholder: "アウトプットしよう", rows: "10", class: "input__blog"
+      = form.submit "更新する", class: "send__button"

@@ -5,7 +5,7 @@
 
     .field
       = f.label :nickname
-      %em (6 characters maximum)
+      %em (6文字以内で入力)
       %br/
       = f.text_field :nickname, autofocus: true, maxlength: "6", class: "input__box"
 
@@ -18,7 +18,7 @@
       = f.label :password
       - if @minimum_password_length
         %em
-          (#{@minimum_password_length} characters minimum)
+          (#{@minimum_password_length}文字以上半角英数字)
       %br/
       = f.password_field :password, autocomplete: "new-password", class: "input__box"
 

@@ -1,0 +1,18 @@
+.body
+  %h2 アカウント編集
+  = form_for(current_user) do |f|
+
+    .field
+      = f.label :nickname
+      %em (6文字以内で入力)
+      %br/
+      = f.text_field :nickname, autofocus: true, maxlength: "6", class: "input__box"
+
+    .field
+      = f.label :email
+      %br/
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: "input__box"
+
+    .actions
+      = f.submit "更新する"
+    = link_to "投稿一覧に戻る", :back, class: "back__button"

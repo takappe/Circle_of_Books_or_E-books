@@ -10,14 +10,15 @@
   %body
     = render 'layouts/notifications'
     %header
+      = link_to "投稿一覧", blogs_path, class: "blog"
       - if user_signed_in?
-        = link_to "ログアウト", destroy_user_session_path, method: :delete
-        = link_to "投稿する", new_blog_path, class: "blog"
         = link_to "マイページ", class: "blog"
+        = link_to "投稿する", new_blog_path, class: "blog"
+        = link_to "ログアウト", destroy_user_session_path, method: :delete
+        = link_to "アカウントの編集", edit_user_path(current_user), class: "blog"
       - else
         = link_to "ログイン", new_user_session_path, class: "blog"
         = link_to "新規登録", new_user_registration_path, class: "blog"
-      = link_to "投稿一覧", blogs_path, class: "blog"
     = yield
     %footer
       %a Copyright Circle of Books or E-books 2020

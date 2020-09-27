@@ -12,7 +12,7 @@
     %header
       = link_to "投稿一覧", blogs_path, class: "blog"
       - if user_signed_in?
-        = link_to "マイページ", class: "blog"
+        = link_to "マイページ", user_path(current_user), class: "blog"
         = link_to "投稿する", new_blog_path, class: "blog"
         = link_to "ログアウト", destroy_user_session_path, method: :delete
         = link_to "アカウントの編集", edit_user_path(current_user), class: "blog"

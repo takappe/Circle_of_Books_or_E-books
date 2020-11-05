@@ -1,13 +1,15 @@
 .main {
-  padding: 150px;
   color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100vw;
+  height: 87vh;
 
   &__box1 {
+    position: relative;
     
     &__message1 {
+      position: absolute;
+      top: 20px;
+      margin-left: 20px;
 
       h1 {
         padding-bottom: 50px;
@@ -17,6 +19,9 @@
     }
 
     &__message2 {
+      position: absolute;
+      margin-left: 20px;
+      top: 300px;
 
       h2 {
         font-size: 30px;
@@ -27,15 +32,13 @@
   }
 
   &__box2 {
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 200px;
+    margin-left: 20px;
 
     &__blogs {
       width: 105px;
-      line-height: 55px;
-      margin: 35px;
+      
       padding: 10px;
       font-size: 20px;
       font-family: monospace;
@@ -46,8 +49,8 @@
 
     &__new {
       width: 105px;
-      line-height: 55px;
-      margin: 35px;
+      
+      
       padding: 10px;
       font-size: 20px;
       font-family: monospace;
@@ -58,14 +61,14 @@
 
     &__guest {
       width: 220px;
-    line-height: 55px;
-    margin: 35px;
-    padding: 10px;
-    font-size: 20px;
-    font-family: monospace;
-    border: 2px solid white;
-    text-decoration: none;
-    text-align: center;
+      
+      
+      padding: 10px;
+      font-size: 20px;
+      font-family: monospace;
+      border: 2px solid white;
+      text-decoration: none;
+      text-align: center;
     }
   }
 }

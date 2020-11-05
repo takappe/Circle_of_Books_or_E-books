@@ -1,13 +1,12 @@
 .main {
   padding: 150px;
-  background: radial-gradient( #05fbff, #1d62f0);
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__box1 {
-
+    
     &__message1 {
 
       h1 {
